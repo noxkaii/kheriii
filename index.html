@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171329">
+  <meta name="description" content="Un pequeño lugarcito de amor para Kheri.">
+  <title>PLAYER 2: KHERI 💗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Inicio">♥ PLAYER 2</a>
+    <div class="top-status"><span class="live-dot"></span> SAFE MODE ON</div>
+  </header>
+
+  <main>
+    <section class="screen hero" id="home">
+      <div class="stars" aria-hidden="true">✦　·　✧　　✦　·　✦　　✧</div>
+      <div class="pixel-heart" aria-hidden="true">♥</div>
+      <p class="eyebrow">A VERY IMPORTANT PLAYER HAS ENTERED</p>
+      <h1>PLAYER 2:<br><span>KHERI</span></h1>
+      <p class="subtitle">A little place to rest.</p>
+      <p class="intro">Este pequeño universo fue hecho por <strong>Ferchis</strong>,<br>solo para ti, mi niño. 💗</p>
+      <button class="pixel-btn primary" id="startBtn">▶ START GAME</button>
+      <p class="tiny">NO MISSIONS. NO PRESSURE. JUST LOVE.</p>
+      <div class="hero-bottom"><span>♥ 99 LIVES</span><span>♡ PLAYER 1: FERCHIS</span></div>
+    </section>
+
+    <section class="screen" id="safezone">
+      <div class="section-head"><span class="level">LEVEL 01</span><span class="mini-icon">✿</span></div>
+      <h2>WELCOME TO YOUR<br><span class="pink">SAFE ZONE</span></h2>
+      <p class="section-note">Aquí no tienes que ganar nada, mi niño.</p>
+      <div class="letter-card">
+        <div class="card-top"><span>✉ LOVE.exe</span><span>♥ ♥ ♥</span></div>
+        <p>Holiii, mi niño. 💗</p>
+        <p>Hice este pequeño lugar pensando en ti. Sé que últimamente has estado cansado y que hay días que se sienten demasiado pesados. No puedo hacer que todo desaparezca mágicamente, pero sí quiero recordarte algo:</p>
+        <p><strong>No tienes que poder con todo todo el tiempo.</strong> Puedes descansar, tener un día difícil, quejarte, quedarte en silencio o simplemente existir. No tienes que fingir conmigo que todo está bien.</p>
+        <p>Ojalá pudiera aparecer ahorita y darte un abrazote de esos que duran mucho, llenarte de besitos y robarte aunque sea una sonrisita. Como todavía no puedo hacerlo en persona, te hice este rinconcito para que tengas un pedacito de mí contigo.</p>
+        <p>Estoy orgullosa de ti por todo lo que haces, pero también quiero que sepas que no tienes que hacer mil cosas para merecer amor. Te quiero por ser tú, incluso en tus días de batería bajita. 🫂</p>
+        <p>Así que guarda tus misiones por un ratito, respira y déjate apapachar. Este nivel no tiene cronómetro y no puedes perderlo.</p>
+        <p class="signature">Con muchísimo amor,<br><span>Ferchis ♡</span></p>
+        <div class="editable-hint">Puedes editar esta carta en el archivo <code>index.html</code>.</div>
+      </div>
+    </section>
+
+    <section class="screen" id="loot">
+      <div class="section-head"><span class="level">LEVEL 02</span><span class="mini-icon">▣</span></div>
+      <h2>SECRET <span class="pink">LOOT</span></h2>
+      <p class="section-note">Toca cada cajita para desbloquear tu recompensa, jugador.</p>
+      <div class="loot-grid">
+        <button class="loot-item" data-message="Recordatorio oficial: eres muy querido. Incluso cuando estás cansado, calladito o no tienes ganas de hacer nada. 💗"><span class="loot-art">♥</span><span>LOOT #01</span><small>APAPACHO</small></button>
+        <button class="loot-item" data-message="Misión secundaria: toma agüita, baja los hombros y descansa un ratito. No es una orden, es tu novia preocupándose por ti. 👀💕"><span class="loot-art">☕</span><span>LOOT #02</span><small>HEALTH POTION</small></button>
+        <button class="loot-item" data-message="JAJAJA, qué injusto que estés tan lejos para mis planes de darte 47 besitos y luego hacerme la inocente. Te debo todos. 😚"><span class="loot-art">✿</span><span>LOOT #03</span><small>BESO PENDIENTE</small></button>
+        <button class="loot-item" data-message="No tienes que contestar este mensaje ni animarte inmediatamente. Solo quería que supieras que te amo y que puedes venir conmigo tal como te sientas. 🫂"><span class="loot-art">★</span><span>LOOT #04</span><small>SAFE SAVE</small></button>
+        <button class="loot-item" data-message="Achievement unlocked: existir y llegar hasta aquí incluso en una semana pesada. Estoy orgullosa de ti, mi niño. 🏆💗"><span class="loot-art">♛</span><span>LOOT #05</span><small>ACHIEVEMENT</small></button>
+        <button class="loot-item" data-message="Aviso del sistema: tu Ferchis te quiere muchísimo. Error 404: cantidad exacta de besos necesarios para expresar ese amor no encontrada. 💘"><span class="loot-art">♡</span><span>LOOT #06</span><small>BUG DEL AMOR</small></button>
+      </div>
+      <div class="message-box" id="lootMessage" aria-live="polite">♡ Tu recompensa aparecerá aquí…</div>
+    </section>
+
+    <section class="screen" id="minigame">
+      <div class="section-head"><span class="level">BONUS STAGE</span><span class="mini-icon">✦</span></div>
+      <h2>COLLECT THE <span class="pink">HEARTS</span></h2>
+      <p class="section-note">Un minijuego chiquito. Tu única misión es atrapar corazones. 💗</p>
+      <div class="game-panel">
+        <div class="game-hud"><span>SCORE: <b id="score">00</b></span><span>GOAL: 10 ♥</span></div>
+        <div id="gameBoard" class="game-board" aria-label="Área del minijuego">
+          <div class="game-welcome" id="gameWelcome">READY, PLAYER 2?<br><span>Presiona START para jugar</span></div>
+        </div>
+        <button class="pixel-btn" id="gameStart">▶ START BONUS GAME</button>
+        <p id="gameResult" class="game-result" aria-live="polite">Psst… todos los puntos son tuyos, pero no te emociones. 😌</p>
+      </div>
+    </section>
+
+    <section class="screen" id="memories">
+      <div class="section-head"><span class="level">LEVEL 03</span><span class="mini-icon">▧</span></div>
+      <h2>OUR LITTLE <span class="pink">UNIVERSE</span></h2>
+      <p class="section-note">Un espacio para nuestros recuerdos favoritos.</p>
+      
+      <div class="photo-grid">
+        <div class="photo-slot photo-fixed">
+          <img src="assets/foto-1.jpeg"
+            alt="Ferchis y Kheri abrazados">
+          <span class="photo-caption">
+            PLAYER 1 + PLAYER 2 ♡
+          </span>
+        </div>
+
+        <div class="photo-slot photo-fixed">
+          <img src="assets/foto-2.jpeg"
+            alt="Kheri dándole un beso a Ferchis">
+          <span class="photo-caption">
+            KISS POWER +100 💗
+          </span>
+        </div>
+
+        <div class="photo-slot photo-fixed">
+          <img src="assets/foto-3.jpeg"
+            alt="Ferchis y Kheri celebrando su graduación">
+          <span class="photo-caption">
+            ACHIEVEMENT UNLOCKED ★
+          </span>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="screen" id="music">
+      <div class="section-head"><span class="level">LEVEL 04</span><span class="mini-icon">♫</span></div>
+      <h2>SOUNDTRACK OF <span class="pink">US</span></h2>
+      <p class="section-note">Canciones para acompañarte. Aquí puedes poner las que te recuerden a nosotros.</p>
+      <div class="music-card">
+        <div class="cassette">♫</div>
+        <div class="music-info"><span class="eyebrow">NOW LOADING: OUR PLAYLIST</span><h3>Para mi niño ♡</h3><p id="playlistNote">Una colección de canciones elegidas por Ferchis.</p></div>
+      </div>
+      
+      <div class="playlist-edit">
+        <p class="playlist-label">♡ MADE WITH LOVE FOR KHERI ♡</p>
+
+        <h3>Un apapacho para mi niño</h3>
+
+        <p>
+          Para que escuches mientras haces tu tarea, mi niño.
+          Ponte cómodo, respira tantito y deja
+          que estas canciones te acompañen.
+          Te mando un abrazo enorme. ♡
+        </p>
+
+        <a
+          class="pixel-btn"
+          id="openPlaylist"
+          href="https://youtu.be/j9i_EZ6uZjE?si=1l_PzhHjxGgdO7rL"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="display: inline-block; text-decoration: none;"
+        >
+         ♫ ESCUCHAR MI REGALITO
+        </a>
+
+        <p class="tiny">
+          Un pedacito de mí, para acompañarte. 💗
+        </p>
+      </div>
+
+    </section>
+
+    <section class="final-screen">
+      <div class="big-pixel-heart">♥</div>
+      <p class="eyebrow">QUEST COMPLETE</p>
+      <h2>YOU ARE<br>LOVED, <span class="pink">PLAYER 2.</span></h2>
+      <p>Si hoy no puedes con todo, no pasa nada.<br>Descansa, mi amor. Te mando un abrazo enorme.</p>
+      <p class="signature">— Ferchis ♡</p>
+      <button class="pixel-btn primary" id="hugBtn">PRESS FOR A PIXEL HUG ♡</button>
+      <p id="hugResult" class="hug-result" aria-live="polite"></p>
+      <footer>MADE WITH ♡, PIXELS & A LITTLE BIT OF MAGIC</footer>
+    </section>
+  </main>
+
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-card">
+      <div class="modal-top"><span>SYSTEM MESSAGE</span><button id="closeModal" aria-label="Cerrar">×</button></div>
+      <div class="modal-heart">♥</div>
+      <h2 id="modalTitle">LEVEL UNLOCKED!</h2>
+      <p id="modalText"></p>
+      <button class="pixel-btn primary" id="modalOk">AWWW, OK ♡</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
